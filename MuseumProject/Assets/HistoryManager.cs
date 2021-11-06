@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class HistoryManager : MonoBehaviour
 {
-
+    [SerializeField] string NextScene = "Game_1";
     [SerializeField] DynamicText[] List;
     [SerializeField] CanvasGroup LastCanvas;
     [SerializeField] float TimeLastCanvas = 3;
@@ -43,7 +43,7 @@ public class HistoryManager : MonoBehaviour
 
     void EndText()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene(NextScene);
     }
 
 }

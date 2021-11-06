@@ -30,7 +30,7 @@ public class MoveState : StateBase
         {
             endPos.x += 1;
         }
-        if (SelectedDirection.x > 0.1f)
+        else if (SelectedDirection.x > 0.1f)
         {
             endPos.z += 1;
         }

@@ -11,7 +11,7 @@ public class Character : MonoBehaviour
     [SerializeField] public float MinHeight = .39f;
     [SerializeField] public float JumpHeight = 1.2f;
     [SerializeField] public CharacterInput Controller;
-    [SerializeField] SpriteDirectionContainer SpriteDirection;
+    [SerializeField] public SpriteDirectionContainer SpriteDirection;
     [SerializeField] CollisionDetection Collider;
     [SerializeField] public ItemsBag Bag;
     
@@ -69,6 +69,8 @@ public class Character : MonoBehaviour
 
     public void Dead(Vector3 position)
     {
+        SpriteDirection.Dead();
+
         SpriteDirection.transform.parent = DeadBody.transform;
         Collider.transform.parent = DeadBody.transform;
         

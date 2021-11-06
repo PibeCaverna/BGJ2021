@@ -7,9 +7,13 @@ public class SpriteDirectionContainer : MonoBehaviour
     [SerializeField] float threshold = .1f;
     [SerializeField] Sprite Front;
     [SerializeField] Sprite Rear;
-    [SerializeField] SpriteRenderer Renderer;
+    [SerializeField] Sprite Lateral;
+    [SerializeField] public SpriteRenderer Renderer;
 
 
+    [SerializeField] Sprite DeadFront;
+    [SerializeField] Sprite DeadRear;
+    [SerializeField] Sprite DeadLateral;
 
     public void SetCurrentDirection(Vector2 dir)
     {
@@ -24,9 +28,25 @@ public class SpriteDirectionContainer : MonoBehaviour
 
         if(Mathf.Abs(dir.x) > threshold)
         {
+            Renderer.sprite = Lateral;
             Renderer.flipX = dir.x > 0;
         }
 
+    }
+
+    public void Dead()
+    {
+        if(Renderer.sprite == Lateral)
+        {
+            Renderer.sprite = DeadLateral;
+        }
+        else
+        {
+            Renderer.sprite = DeadFront;
+        }
+        Front = DeadFront;
+        Rear = DeadRear;
+        Lateral = DeadLateral;
     }
 
 }

@@ -264,15 +264,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Mi nombre es Flacro, soy el \xFAnico sobreviviente de mi especie, me conserve
-    por millones de a\xF1os en el subsuelo tras una incre\xEDble helada. \r\n                                                    
-    \nHace unos a\xF1os me encontraron unos humanos y comenzaron a experimentar conmigo.
+    por millones de a\xF1os en el subsuelo tras una incre\xEDble helada. \r\n\nHace
+    unos a\xF1os me encontraron unos humanos y comenzaron a experimentar conmigo.
     Iba a ser el centro de atracci\xF3n de ciertos museos, ya que estos ten\xEDan
     que exponer juegos creados en tres d\xEDas por concursantes novatos gracias a
-    un torneo llamado Game Jam Bah\xEDa.\r\n                                                    
-    \nY lamentablemente no hab\xEDa forma de que esos juegos cumplieran con las expectativas
-    de aquellos centros tur\xEDsticos que quer\xEDan sorprender.\r\n                                                    
-    \nPor esa raz\xF3n me quer\xEDan usar como objeto de circo, para que hubiese
-    por lo menos algo impresionante e interesante en esos museos.\r\n                                                     "
+    un torneo llamado Game Jam Bah\xEDa.\r\n\nY lamentablemente no hab\xEDa forma
+    de que esos juegos cumplieran con las expectativas de aquellos centros tur\xEDsticos
+    que quer\xEDan sorprender.\r\n\nPor esa raz\xF3n me quer\xEDan usar como objeto
+    de circo, para que hubiese por lo menos algo impresionante e interesante en esos
+    museos.\r\n "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.5
+  m_fontSize: 46.85
   m_fontSizeBase: 60.18
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -548,12 +548,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Pss... Obvio, soy un velociraptor, todos aman a los velociraptors, y sino
-    pod\xE9s cerrar el juego ahora.\r\n                                                    
-    \nMmm, mm, mmm... Como dec\xEDa... Encontraron la forma de dejarme vivo aunque
-    me quedara solo la cabeza.\r\n                                                    
-    \nTuve que comerme el resto de mi cuerpo y... bueno, te dejo que juegues para
-    no narrarte toda la historia, humano...\r\n                                                    
-    \nY recuerda\u2026 No hay que experimentar con especies en peligro de extinci\xF3n...\r\n                                                     "
+    pod\xE9s cerrar el juego ahora.\r\n\nMmm, mm, mmm... Como dec\xEDa... Encontraron
+    la forma de dejarme vivo aunque me quedara solo la cabeza.\r\n\nTuve que comerme
+    el resto de mi cuerpo y... bueno, te dejo que juegues para no narrarte toda la
+    historia, humano...\r\n\nY recuerda\u2026 No hay que experimentar con especies
+    en peligro de extinci\xF3n...\r\n "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -580,7 +579,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 63.05
+  m_fontSize: 47.3
   m_fontSizeBase: 60.18
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -746,11 +745,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c054210e4531348ba2903fd5a5ed89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NextScene: Game_1
   List:
   - {fileID: 1797016355}
   - {fileID: 2059184565}
   LastCanvas: {fileID: 1964505232}
-  TimeLastCanvas: 3
+  TimeLastCanvas: 1
 --- !u!1 &1797016350
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,10 +855,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextField: {fileID: 281048586}
   CanvasGroup: {fileID: 1797016354}
-  TimeShowingCanvas: 2
+  TimeShowingCanvas: 1
   TimeWaitingCanvas: 1
   TimeWritting: 0.05
-  TimeAfter: 5
+  TimeAfter: 0.1
 --- !u!1 &1964505228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,7 +1051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextField: {fileID: 1543554960}
   CanvasGroup: {fileID: 2059184564}
-  TimeShowingCanvas: 2
+  TimeShowingCanvas: 1
   TimeWaitingCanvas: 2
   TimeWritting: 0.05
-  TimeAfter: 5
+  TimeAfter: 0.1

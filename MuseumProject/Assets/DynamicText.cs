@@ -28,7 +28,19 @@ public class DynamicText : MonoBehaviour
 
     public bool HasDone { get; protected set; }
 
-    
+    int entercount = 0;
+
+    bool spaceDown = false;
+    bool waitkey = false;
+
+    private void Update()
+    {
+        if (!waitkey) return;
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            spaceDown = true;
+        }
+    }
 
     public void CustomUpdate(float deltaTime)
     {
@@ -47,8 +59,44 @@ public class DynamicText : MonoBehaviour
             {
                 timer = 0;
                 if (TextField.maxVisibleCharacters < TextField.text.Length)
-                    TextField.maxVisibleCharacters += 1;
-                else waiting = true;
+                {
+                    waitkey = true;
+
+                    if (entercount % 2 == 0)
+                    {
+                        if (TextField.text[TextField.maxVisibleCharacters] == '\n') entercount++;
+                        TextField.maxVisibleCharacters += 1;
+
+                        if (spaceDown)
+                        {
+                            waitkey = false;
+                            spaceDown = false;
+
+                            while(TextField.maxVisibleCharacters < TextField.text.Length && 
+                                TextField.text[TextField.maxVisibleCharacters] != '\n')
+                                TextField.maxVisibleCharacters += 1;
+
+                        }
+                    }
+                    else
+                    {
+                        if (spaceDown)
+                        {
+                            TextField.maxVisibleCharacters += 2;
+                            entercount++;
+                            spaceDown = false;
+                            waitkey = false;
+                        }
+                    }
+
+
+
+                }
+                else
+                {
+                    waiting = true;
+                    waitkey = false;
+                }
             }
         }
         else

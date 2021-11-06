@@ -135,7 +135,15 @@ public class SoundManager : MonoBehaviour
     public void ChangeMusic(AudioClip clip, float time, bool loop, bool cross = false)
     {
         StopAllCoroutines();
-        StartCoroutine(ChangeMusic_Coroutine(clip, time, loop, cross));
+        if (time > 0)
+            StartCoroutine(ChangeMusic_Coroutine(clip, time, loop, cross));
+        else
+        {
+            CurrentMusic.Stop();
+            CurrentMusic.clip = clip;
+            CurrentMusic.loop = loop;
+            CurrentMusic.Play();
+        }
     }
 
     IEnumerator ChangeMusic_Coroutine(AudioClip clip, float time, bool loop, bool cross)

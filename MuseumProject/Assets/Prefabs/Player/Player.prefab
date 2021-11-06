@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 726106121}
   - component: {fileID: 726106122}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Land
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,6 +49,67 @@ MonoBehaviour:
   OnMove: {fileID: 726106122}
   OnEndState: {fileID: 881538222095672725}
   TimeLanding: 0.25
+--- !u!1 &838888899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 838888900}
+  - component: {fileID: 838888902}
+  - component: {fileID: 838888901}
+  m_Layer: 9
+  m_Name: DeathObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &838888900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838888899}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 881538221992558877}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &838888902
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838888899}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &838888901
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838888899}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.4
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &881538221992558876
 GameObject:
   m_ObjectHideFlags: 0
@@ -59,7 +120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 881538221992558877}
   - component: {fileID: 881538221992558878}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,6 +144,7 @@ Transform:
   - {fileID: 881538222849344601}
   - {fileID: 4108289645933108476}
   - {fileID: 1409599338659347506}
+  - {fileID: 838888900}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -102,8 +164,10 @@ MonoBehaviour:
   JumpHeight: 0.3
   Controller: {fileID: 881538222535733475}
   SpriteDirection: {fileID: 881538223415608096}
+  Collider: {fileID: 881538222503081054}
   Bag: {fileID: 3740675217350000544}
   CenterBag: {fileID: 1896095846}
+  DeadBody: {fileID: 838888902}
   LastDirection: {x: 0, y: 0}
   CurrentState: {fileID: 881538222095672725}
   Knockbacking: 0
@@ -117,7 +181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 881538222095672724}
   - component: {fileID: 881538222095672725}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 881538222305149442}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Death
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 881538222461016926}
   - component: {fileID: 881538222461016927}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Move
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +315,7 @@ GameObject:
   - component: {fileID: 881538222503081050}
   - component: {fileID: 881538222503081053}
   - component: {fileID: 881538222503081054}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ColliderAndShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,7 +439,7 @@ GameObject:
   m_Component:
   - component: {fileID: 881538222535733474}
   - component: {fileID: 881538222535733475}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,7 +481,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 881538222849344601}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: States
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 881538223030955854}
   - component: {fileID: 881538223030955855}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Knockback
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +566,7 @@ GameObject:
   - component: {fileID: 881538223415608110}
   - component: {fileID: 881538223415608111}
   - component: {fileID: 881538223415608096}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpriteRenderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +628,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: eb1d173e3d447be43806f53dbe5af430, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9258593c070a0a43b0b625b837b796d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -588,9 +652,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   threshold: 0.1
-  Front: {fileID: 21300000, guid: eb1d173e3d447be43806f53dbe5af430, type: 3}
-  Rear: {fileID: 21300000, guid: eb1d173e3d447be43806f53dbe5af430, type: 3}
+  Front: {fileID: 21300000, guid: 00e76e46251be094eb58a54c87df6dfd, type: 3}
+  Rear: {fileID: 21300000, guid: 6cd4c251a00e4ce4fa12bd6b5794e2a8, type: 3}
+  Lateral: {fileID: 21300000, guid: d9258593c070a0a43b0b625b837b796d, type: 3}
   Renderer: {fileID: 881538223415608111}
+  DeadFront: {fileID: 21300000, guid: e78323604d5a69844bd1d81a505d4892, type: 3}
+  DeadRear: {fileID: 21300000, guid: e78323604d5a69844bd1d81a505d4892, type: 3}
+  DeadLateral: {fileID: 21300000, guid: 9128a564401085f43b76a3963eb33c74, type: 3}
 --- !u!1 &1159139581939874230
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,7 +669,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4108289645933108476}
   - component: {fileID: 4386970852565216278}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CameraFollow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -645,7 +713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1409599338659347506}
   - component: {fileID: 1896095846}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ItemFollowCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -694,7 +762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2380634528190404730}
   - component: {fileID: 3740675217350000544}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Items
   m_TagString: Untagged
   m_Icon: {fileID: 0}
