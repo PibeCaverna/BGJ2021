@@ -5566,8 +5566,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogues:
-  - "Estos locos que tuvieron que conectarlos... por qu\xE9 no simplemente hicieron
-    modelos electr\xF3nicos\u2026"
+  - "Estos locos\u2026 tuvieron que conectar los museos por portales... "
+  - "Por qu\xE9 no simplemente hicieron modelos electr\xF3nicos de mi especie como
+    sol\xEDan hacer\u2026"
   - "Bueno, que mas da\u2026 a cabecear hasta la salida jeje"
   Text: {fileID: 1159063583}
   DialogueCanvas: {fileID: 1573596371}
@@ -6309,8 +6310,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Dialogues:
-  - "Uf\u2026 por fin... despu\xE9s de meses y meses, pude escapar\u2026"
-  - Ahora solo tengo que encontrar mis restos e ir por el portal del ultimo museo
+  - "Uf\u2026 por fin... despu\xE9s de meses y meses, pude escapar de ese museo de
+    ciencias\u2026"
+  - Ahora solo tengo que encontrar mis restos y encontrar la salida de estos museos
   Text: {fileID: 1159063583}
   DialogueCanvas: {fileID: 1573596371}
 --- !u!1 &1754755297
