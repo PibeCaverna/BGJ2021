@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7afc078352a993a4a90d409e7c1c16b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas: {fileID: 386002450}
+  Canvas: {fileID: 1379784261}
 --- !u!1 &177683710
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7afc078352a993a4a90d409e7c1c16b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas: {fileID: 386002450}
+  Canvas: {fileID: 1911119669}
 --- !u!1 &225536686
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 608896a7bf7744840969aca100050d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas: {fileID: 386002450}
+  Canvas: {fileID: 1911119669}
 --- !u!1 &265658814
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,7 +842,7 @@ MonoBehaviour:
   StartButton: {fileID: 1804986022}
   CreditsButton: {fileID: 0}
   ExitButton: {fileID: 626083879}
-  NextScene: Game
+  NextScene: Game_1
   CreditsPanel: {fileID: 1956143832}
 --- !u!1 &454965301
 GameObject:
@@ -3455,7 +3455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 608896a7bf7744840969aca100050d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canvas: {fileID: 386002450}
+  Canvas: {fileID: 1379784261}
 --- !u!1 &2124585276
 GameObject:
   m_ObjectHideFlags: 0
