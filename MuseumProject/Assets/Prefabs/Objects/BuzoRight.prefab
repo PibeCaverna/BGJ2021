@@ -137,7 +137,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5736630911426114707}
   - component: {fileID: 2098166787163084683}
-  - component: {fileID: 7841894807680890923}
   m_Layer: 8
   m_Name: BuzoRight
   m_TagString: Untagged
@@ -176,17 +175,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0, z: -1}
   speed: 1
---- !u!95 &7841894807680890923
+--- !u!95 &3298135152090958552
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4984209344389868719}
+  m_GameObject: {fileID: 6266291378302558252}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e3cef5a19ad10734e8ce6623790ed2ed, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -375,7 +374,7 @@ PrefabInstance:
     - target: {fileID: 2021740951865039451, guid: 428a8156356962e4ba5ccb18dd870c3b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 471d3f1950201824489357fee6b440c5, type: 3}
+      objectReference: {fileID: 21300000, guid: b150ded5f608fb7438bd442a0c5a64ec, type: 3}
     - target: {fileID: 2021740951865039451, guid: 428a8156356962e4ba5ccb18dd870c3b, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -390,6 +389,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 428a8156356962e4ba5ccb18dd870c3b, type: 3}
+--- !u!1 &6266291378302558252 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2021740951865039445, guid: 428a8156356962e4ba5ccb18dd870c3b, type: 3}
+  m_PrefabInstance: {fileID: 5402345250617801337}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6266291378302558243 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2021740951865039450, guid: 428a8156356962e4ba5ccb18dd870c3b, type: 3}
