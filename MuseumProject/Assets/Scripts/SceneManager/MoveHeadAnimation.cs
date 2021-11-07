@@ -7,7 +7,7 @@ public class MoveHeadAnimation : ActionBase
     [SerializeField] Character Character;
     bool end = false;
 
-    float timer = 1;
+    float timer = 0;
     int count = 0;
 
     public override void CustomUpdate(float deltaTime)
@@ -32,7 +32,7 @@ public class MoveHeadAnimation : ActionBase
     public override void DoAction()
     {
         end = false;
-        timer = 1;
+        timer = 0;
     }
 
     public override bool IsDone()

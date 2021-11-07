@@ -51,6 +51,12 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    public void StopMusic()
+    {
+        Music1.Stop();
+        Music2.Stop();
+    }
+
     public AudioSource PlayEffect(AudioClip clip, Transform emmiter, float pitch_value)
     {
         AudioSource audioSource = SoundEffectSources[_index];
