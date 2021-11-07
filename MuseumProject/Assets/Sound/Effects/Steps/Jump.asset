@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: Jump
   m_EditorClassIdentifier: 
   Clips:
-  - {fileID: 8300000, guid: ad28831658049d845a37f9366b669296, type: 3}
+  - {fileID: 8300000, guid: 4c3209883e52c334480146134f038297, type: 3}
+  - {fileID: 8300000, guid: 90d78a77da06f5548beb9d6b5e2d399b, type: 3}
+  - {fileID: 8300000, guid: cbdbbdd2bfd972c4fa15b8d97793d852, type: 3}
+  - {fileID: 8300000, guid: 79f7486bee19975428b1783155aa5601, type: 3}
