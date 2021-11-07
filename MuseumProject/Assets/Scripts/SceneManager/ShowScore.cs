@@ -7,6 +7,8 @@ public class ShowScore : ActionBase
 
     bool showDialogue = true;
 
+    bool start = false;
+
     private string score;
     [SerializeField] TMPro.TextMeshProUGUI Text;
     [SerializeField] CanvasGroup ScoreCanvas;
@@ -20,12 +22,12 @@ public class ShowScore : ActionBase
         ScoreCanvas.gameObject.SetActive(true);
         showDialogue = true;
         Text.text = "SCORE: " + score;
-
+        start = true;
     }
 
     public override void CustomUpdate(float deltaTime)
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space)) showDialogue = false;
     }
 
     public override bool IsDone()
@@ -37,4 +39,5 @@ public class ShowScore : ActionBase
     {
         return showDialogue;
     }
+
 }
